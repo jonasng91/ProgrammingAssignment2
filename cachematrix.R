@@ -35,7 +35,7 @@ cacheSolve <- function(p, ...) {
   # get the cached value
   inverse <- p$getInverse()
   # if a cached value exists return it
-  if(!is.null(inverse)) {
+  if(!is.na(inverse)) {
     message("getting cached data")
     return(inverse)
   }
